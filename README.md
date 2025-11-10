@@ -55,7 +55,7 @@ I used the <code>PERCENTILE.EXC</code> function to determine the threshold amoun
 Equation for the first entry: 
 <code>=PERCENTILE.EXC($C2:$C20, 1-K11)</code>
 
-I used the <code>percentile.exc</code> function to determine the threshold amounts for the top 20th, 40th, and 60th percentiles of units sold amounts. Specifically, I used 1 minus the 20th percentile to get units sold amounts in the top 20th percentile. 
+I used the <code>PERCENTILE.EXC</code> function to determine the threshold amounts for the top 20th, 40th, and 60th percentiles of units sold amounts. Specifically, I used 1 minus the 20th percentile to get units sold amounts in the top 20th percentile. 
 
 
 
