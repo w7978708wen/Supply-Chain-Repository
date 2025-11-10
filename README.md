@@ -45,7 +45,6 @@ I used the <code>PERCENTILE.EXC</code> function to determine the threshold amoun
 
 
 
-
 <h4>Right table 2: Sales Ranking:</h4>
 
 <h4>"Min amount"(to meet the cut-off) column </h4>
@@ -105,6 +104,9 @@ I also applied conditional formatting:
 
 If a cell under the "Discontinue" column contains the text "Yes", then make the cell have red highlight and red text. 
 If a cell under the "Discontinue" column contains the text "No", then make the cell have green highlight and green text. 
+
+
+<hr style="height:5px;background-color:#1e1c1f;">
 
 
 <H2>Sheet 2.Re-Order Point & VLOOKUP</H2>
