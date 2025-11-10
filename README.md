@@ -156,9 +156,9 @@ I typed:
 <code>=XLOOKUP(I4,A:A,E:E,"SKU Not Found",0)</code>
 
 
-The lookup_value is what you would type in the SKU input cell (cell I4)
+The lookup_value is what you would type in the SKU input cell (cell I4).
 
-Within the <code>XLOOKUP</code> function, let the [match_mode] value equal to 0, which means to return exact match 
+Within the <code>XLOOKUP</code> function, let the [match_mode] value equal to 0, which means to return exact match.
 
 
 
