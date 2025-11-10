@@ -7,15 +7,22 @@ Given the profit per unit and units sold for each SKU/item, the item is classifi
 
 The SKU/item that are classified as "D" in both categories are recommended to be discontinued. 
 
-Here is a snippet of how the sheet looks like:
-<img src="https://github.com/w7978708wen/Supply-Chain-Case-Study-/blob/main/Screenshots/ABCD%20Classification%20sheet%20pt%201.png?raw=true"></img>
+
+Sheet 2. Re-Order Point & VLOOKUP:
+
+Given the beginning & current stock counts and the re-order point for each SKU/item, the current stock count is calculated which further determines whether determine it needs to be re-ordered.  
+
+To streamline supply chain management, the XLOOKUP function is used here to efficiently match each SKU with its corresponding current inventory count.
 
 <H2>Sheet 1. ABCD Classification</H2>
+
+Here is a snippet of how the sheet looks:
+<img src="https://github.com/w7978708wen/Supply-Chain-Case-Study-/blob/main/Screenshots/ABCD%20Classification%20sheet%20pt%201.png?raw=true"></img>
 
 <h3>Objective:</h3>
 The objective is to evaluate the performance of each SKU/item based on how many units are sold and total profit. Based on these performance metrics, it is recommended whether or not to discontinue the item. 
 
-The spreadsheet is designed to update automatically (in terms of classification and conditional formatting) when the percentile input or other data values change.
+The spreadsheet is designed to update automatically (in terms of classification and conditional formatting) when the percentile inputs or other data values change.
 
 <h3>Key insight:</h3>
 
@@ -34,7 +41,7 @@ I used several Excel functions to create additional calculated columns.
 Equation for the first entry: 
 <code>=PERCENTILE.EXC($D2:$D20, 1-K4)</code>
 
-I used the <code>percentile.exc</code> function on a given column to determine the threshold amounts for the top 20th, 40th, and 60th percentiles of total profit. In particular, I used 1 minus the 20th percentile to get total profit amounts in the top 20th percentile. 
+I used the <code>PERCENTILE.EXC</code> function to determine the threshold amounts for the top 20th, 40th, and 60th percentiles of total profit. Specifically, I used 1 minus the 20th percentile to get total profit amounts in the top 20th percentile. 
 
 
 
@@ -48,7 +55,7 @@ I used the <code>percentile.exc</code> function on a given column to determine t
 Equation for the first entry: 
 <code>=PERCENTILE.EXC($C2:$C20, 1-K11)</code>
 
-I used the <code>percentile.exc</code> function on a given column to determine the threshold amounts for the top 20th, 40th, and 60th percentiles of units sold amounts. In particular, I used 1 minus the 20th percentile to get units sold amounts in the top 20th percentile. 
+I used the <code>percentile.exc</code> function to determine the threshold amounts for the top 20th, 40th, and 60th percentiles of units sold amounts. Specifically, I used 1 minus the 20th percentile to get units sold amounts in the top 20th percentile. 
 
 
 
@@ -59,7 +66,7 @@ I used the <code>percentile.exc</code> function on a given column to determine t
 
 <h4>"Total Profit" column:</h4>
 
-Total Profit = Profit Per unit * Units Sold 
+Total Profit = Profit Per Unit * Units Sold 
 
 <h4>"Sales Ranking" column:</h4>
 
@@ -102,19 +109,27 @@ If a cell under the "Discontinue" column contains the text "No", then make the c
 
 <H2>Sheet 2.Re-Order Point & VLOOKUP</H2>
 
+Here is a snippet of how the sheet looks like:
+<img src="https://github.com/w7978708wen/Supply-Chain-Case-Study-/blob/main/Screenshots/Re-Order%20Point%20&%20VLOOKUP%20sheet%20pt%201.png?raw=true"></img>
+
+
 <h3>Objective:</h3>
-The objective is to determine whether each SKU/item needs to be re-ordered based on the current stock count. The XLOOKUP function efficiently matching each SKU with its corresponding current inventory count, making XLOOKUP a great tool in supply chain management. 
+The objective is to determine whether each SKU/item needs to be re-ordered based on the current stock count. 
+
+The XLOOKUP function efficiently matches each SKU with its corresponding current inventory count, making XLOOKUP a great tool in supply chain management. 
 
 The spreadsheet is designed to update automatically (in terms of whether a SKU/item needs to be re-ordered) when values like number of units sold and re-order point change.
 
 <h3>Key insight:</h3>
 
-There are currently 6 items that need to be re-ordered, because the current stock on hand is less than the re-order point: SKU22769, SKU45456, and so on...
+There are currently 6 items that need to be re-ordered, because the current stock on hand is less than the re-order point: SKU22769, SKU45456, and others...
 
 <h3>Methodology:</h3>
-Given the beginning stock, amounts sold, re-order point of each SKU/item, I used several Excel functions to create additional calculated columns. 
+Given the beginning stock, units sold, re-order point of each SKU/item, I used several Excel functions to create additional calculated columns. 
 
 <h4>Left table:</h4>
+
+<img src="https://github.com/w7978708wen/Supply-Chain-Case-Study-/blob/main/Screenshots/Re-Order%20Point%20&%20VLOOKUP%20sheet%20pt%202.png?raw=true"></img>
 
 <h4>Current Stock On Hand column:</h4>
 Current Stock On Hand = Beginning Stock  Sales/Consumed 
@@ -123,9 +138,11 @@ Current Stock On Hand = Beginning Stock  Sales/Consumed
 
 <code>=IF(E2>=D2,"No", "Yes")</code>
 
-I used a IF function, such that if the current stock on hand is greater than or equal to the re-order point, then assign the cell value is "No". Otherwise, assign the cell value as "Yes". 
+I used an <code>IF</code> function, such that if the current stock on hand is greater than or equal to the re-order point, then assign the cell value is "No". Otherwise, assign the cell value as "Yes". 
 
 <h4>Right table:</h4>
+
+<img src="https://github.com/w7978708wen/Supply-Chain-Case-Study-/blob/main/Screenshots/Re-Order%20Point%20&%20VLOOKUP%20sheet%20pt%203.png?raw=true"></img>
 
 <h4>Current Stock On Hand column:</h4>
 
@@ -138,7 +155,7 @@ I typed:
 
 The lookup_value is what you would type in the SKU input cell (cell I4)
 
-Select match_mode = 0, which means to return exact match 
+Within the <code>XLOOKUP</code> function, let the [match_mode] value equal to 0, which means to return exact match 
 
 
 
