@@ -1,4 +1,4 @@
-<h2>Overview</h2>
+<h2>Overview:</h2>
 
 This "Supply Chain Excel Workbook" contains:
 
@@ -15,7 +15,7 @@ Given the beginning & current stock counts and the re-order point for each SKU/i
 
 To streamline supply chain management, the XLOOKUP function is used here to efficiently match each SKU with its corresponding current inventory count.
 
-<H2>Sheet 1. ABCD Classification</H2>
+<H2>Sheet 1. ABCD Classification:</H2>
 
 Here is a snippet of how the sheet looks:
 <img src="https://github.com/w7978708wen/Supply-Chain-Case-Study-/blob/main/Screenshots/ABCD%20Classification%20sheet%20pt%201.png?raw=true"></img>
