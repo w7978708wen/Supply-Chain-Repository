@@ -2,7 +2,7 @@
 
 This "Product Discontinuation Recommendations" Excel spreadsheet contains:
 
-Sheet 1.ABCD Classification:
+Sheet 1. ABCD Classification:
 Given the profit per unit and units sold for each SKU/item, the item is classified as "A", "B", "C", or "D" based on "Sales Ranking" and "Total Profit Ranking" metrices. 
 
 The SKU/item that are classified as "D" in both categories are recommended to be discontinued. 
