@@ -25,9 +25,9 @@ SKU99005,SKU98633,SKU99010,SKU45667
 <h3>Methodology:</h3>
 I used several Excel functions to create additional calculated columns. 
 
-<h4>Right table 1: Total Profit Ranking </h4>
+<h4>Right table 1: Total Profit Ranking:</h4>
 
-<h4>"Min amount"(to meet the cut-off) column </h4>
+<h4>"Min amount"(to meet the cut-off) column:</h4>
 
 <img src="https://github.com/w7978708wen/Supply-Chain-Case-Study-/blob/main/Screenshots/ABCD%20Classification%20sheet%20pt%202.png?raw=truee"></img>
 
@@ -39,7 +39,7 @@ I used the <code>percentile.exc</code> function on a given column to determine t
 
 
 
-<h4>Right table 2: Sales Ranking </h4>
+<h4>Right table 2: Sales Ranking:</h4>
 
 <h4>"Min amount"(to meet the cut-off) column </h4>
 
@@ -53,15 +53,15 @@ I used the <code>percentile.exc</code> function on a given column to determine t
 
 
 
-<h4>Left table</h4>
+<h4>Left table:</h4>
 
 <img src="https://github.com/w7978708wen/Supply-Chain-Case-Study-/blob/main/Screenshots/ABCD%20Classification%20sheet%20pt%204.png?raw=true"></img>
 
-<h4>"Total Profit" column</h4>
+<h4>"Total Profit" column:</h4>
 
 Total Profit = Profit Per unit * Units Sold 
 
-<h4>"Sales Ranking" column</h4>
+<h4>"Sales Ranking" column:</h4>
 
 Equation for the first entry: 
 
@@ -75,7 +75,7 @@ Else if the units sold >= minimum amount to reach top 60th percentile, then clas
 
 
 
-<h4>"Total Profit Ranking" column</h4>
+<h4>"Total Profit Ranking" column:</h4>
 
 Equation for the first entry: 
 
@@ -86,7 +86,7 @@ Equation for the first entry:
 Similar to the "Sales Ranking" column, I applied the same classification logic for "B", "C". If it's neither "A", "B", nor "C", then assign it the classification of "D". 
 
 
-<h4>"Discontinue" column</h4>
+<h4>"Discontinue" column:</h4>
 
 Equation for the first entry: 
 
@@ -98,5 +98,47 @@ I also applied conditional formatting:
 
 If a cell under the "Discontinue" column contains the text "Yes", then make the cell have red highlight and red text. 
 If a cell under the "Discontinue" column contains the text "No", then make the cell have green highlight and green text. 
+
+
+<H2>Sheet 2.Re-Order Point & VLOOKUP</H2>
+
+<h3>Objective:</h3>
+The objective is to determine whether each SKU/item needs to be re-ordered based on the current stock count. The XLOOKUP function efficiently matching each SKU with its corresponding current inventory count, making XLOOKUP a great tool in supply chain management. 
+
+The spreadsheet is designed to update automatically (in terms of whether a SKU/item needs to be re-ordered) when values like number of units sold and re-order point change.
+
+<h3>Key insight:</h3>
+
+There are currently 6 items that need to be re-ordered, because the current stock on hand is less than the re-order point: SKU22769, SKU45456, and so on...
+
+<h3>Methodology:</h3>
+Given the beginning stock, amounts sold, re-order point of each SKU/item, I used several Excel functions to create additional calculated columns. 
+
+<h4>Left table:</h4>
+
+<h4>Current Stock On Hand column:</h4>
+Current Stock On Hand = Beginning Stock  Sales/Consumed 
+
+<h4>RE-ORDER column:</h4>
+
+<code>=IF(E2>=D2,"No", "Yes")</code>
+
+I used a IF function, such that if the current stock on hand is greater than or equal to the re-order point, then assign the cell value is "No". Otherwise, assign the cell value as "Yes". 
+
+<h4>Right table:</h4>
+
+<h4>Current Stock On Hand column:</h4>
+
+Syntax: 
+<code>=xlookup(lookup_value, lookup_array, return_array,[if_not_found],[match_mode],[search_mode])</code>
+
+I typed: 
+<code>=XLOOKUP(I4,A:A,E:E,"SKU Not Found",0)</code>
+
+
+The lookup_value is what you would type in the SKU input cell (cell I4)
+
+Select match_mode = 0, which means to return exact match 
+
 
 
