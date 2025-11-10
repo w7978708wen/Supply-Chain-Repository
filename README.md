@@ -1,6 +1,6 @@
 <h2>Overview</h2>
 
-This "Product Discontinuation Recommendations" Excel spreadsheet contains:
+This "Supply Chain Excel Workbook" contains:
 
 Sheet 1. ABCD Classification:
 Given the profit per unit and units sold for each SKU/item, the item is classified as "A", "B", "C", or "D" based on "Sales Ranking" and "Total Profit Ranking" metrices. 
