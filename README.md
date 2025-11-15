@@ -1,6 +1,6 @@
 <h2>Overview:</h2>
 
-The  E x c e l  workbook contains:
+In  E x c e l, I created a workbook to streamline supply chain management: 
 
 Sheet 1. ABCD Classification:
 
@@ -13,7 +13,7 @@ Sheet 2. Re-Order Point & VLOOKUP:
 
 Given the beginning & current stock counts and the re-order point for each SKU/item, the current stock count is calculated which further determines whether determine it needs to be re-ordered.  
 
-To streamline supply chain management, the XLOOKUP function is used here to efficiently match each SKU with its corresponding current inventory count.
+The XLOOKUP function is used here to efficiently match each SKU with its corresponding current inventory count.
 
 <H2>Sheet 1. ABCD Classification:</H2>
 
