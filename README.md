@@ -1,6 +1,6 @@
 <h2>Overview:</h2>
 
-This "Supply Chain Excel Workbook" contains:
+The  E x c e l  workbook contains:
 
 Sheet 1. ABCD Classification:
 
@@ -31,7 +31,7 @@ The following products are recommended to be discontinued, since they receive a 
 SKU99005,SKU98633,SKU99010,SKU45667
 
 <h3>Methodology:</h3>
-I used several Excel functions to create additional calculated columns. 
+I used several E x c e l functions to create additional calculated columns. 
 
 <h4>Right table 1: Total Profit Ranking:</h4>
 
@@ -128,7 +128,7 @@ The spreadsheet is designed to update automatically (in terms of whether a SKU/i
 There are currently 6 items that need to be re-ordered, because the current stock on hand is less than the re-order point: SKU22769, SKU45456, and others...
 
 <h3>Methodology:</h3>
-Given the beginning stock, units sold, re-order point of each SKU/item, I used several Excel functions to create additional calculated columns. 
+Given the beginning stock, units sold, re-order point of each SKU/item, I used several functions to create additional calculated columns. 
 
 <h4>Left table:</h4>
 
