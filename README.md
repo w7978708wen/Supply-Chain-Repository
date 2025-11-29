@@ -18,7 +18,7 @@ The XLOOKUP function is used here to efficiently match each SKU with its corresp
 <H2>Sheet 1. ABCD Classification:</H2>
 
 Here is a snippet of how the sheet looks:
-<img src="https://github.com/w7978708wen/Supply-Chain-Case-Study-/blob/main/Screenshots/ABCD%20Classification%20sheet%20pt%201.png?raw=true"></img>
+<img src="https://github.com/w7978708wen/Supply-Chain-Repository/blob/main/Screenshots/ABCD%20Classification%20sheet%20pt%201.png?raw=true"></img>
 
 <h3>Objective:</h3>
 The objective is to evaluate the performance of each SKU/item based on how many units are sold and total profit. Based on these performance metrics, it is recommended whether or not to discontinue the item. 
@@ -62,7 +62,7 @@ I used the <code>PERCENTILE.EXC</code> function to determine the threshold amoun
 
 <h4>Left table:</h4>
 
-<img src="https://github.com/w7978708wen/Supply-Chain-Case-Study-/blob/main/Screenshots/ABCD%20Classification%20sheet%20pt%204.png?raw=true"></img>
+<img src="https://github.com/w7978708wen/Supply-Chain-Repository/blob/main/Screenshots/ABCD%20Classification%20sheet%20pt%204.png?raw=true"></img>
 
 <h4>"Total Profit" column:</h4>
 
