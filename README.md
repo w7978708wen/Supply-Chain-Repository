@@ -108,16 +108,27 @@ If a cell under the "Discontinue" column contains the text "No", then make the c
 
 
 <hr style="height:5px;background-color:#1e1c1f;">
+<H2>Sheet 2.Pivot Table – SKU Profits</H2>
 
+I created a Pivot Table using the columns in the "ABCD Classification" sheet's left table.
 
-<H2>Sheet 2.Re-Order Point & VLOOKUP</H2>
+I categorized the products by "Total Profit Ranking". I also sorted the "Average Profit Per Unit" column in ascending order to get a quick view of which products have the lowest "Average Profit Per Unit" and should be recommended for discontinuation.
 
 Here is a snippet of how the sheet looks like:
-<img src="https://github.com/w7978708wen/Supply-Chain-Case-Study-/blob/main/Screenshots/Re-Order%20Point%20&%20VLOOKUP%20sheet%20pt%201.png?raw=true"></img>
 
+<img src="https://github.com/w7978708wen/Supply-Chain-Repository/blob/main/Screenshots/Pivot%20Table%20%E2%80%93%20SKU%20Profits%20pt%201.png?raw=true"></img>
+
+
+<hr style="height:5px;background-color:#1e1c1f;">
+<H2>Sheet 3.Re-Order Point & VLOOKUP</H2>
 
 <h3>Objective:</h3>
 The objective is to determine whether each SKU/item needs to be re-ordered based on the current stock count. 
+
+Here is a snippet of how the sheet looks like:
+
+<img src="https://github.com/w7978708wen/Supply-Chain-Case-Study-/blob/main/Screenshots/Re-Order%20Point%20&%20VLOOKUP%20sheet%20pt%201.png?raw=true"></img>
+
 
 The XLOOKUP function efficiently matches each SKU with its corresponding current inventory count, making XLOOKUP a great tool in supply chain management. 
 
