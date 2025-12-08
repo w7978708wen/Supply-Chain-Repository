@@ -110,7 +110,7 @@ If a cell under the "Discontinue" column contains the text "No", then make the c
 <hr style="height:5px;background-color:#1e1c1f;">
 <H2>Sheet 2.Pivot Table – SKU Profits</H2>
 
-I created a Pivot Table using the columns in the "ABCD Classification" sheet's left table.
+I created a PivotTable using the columns in the "ABCD Classification" sheet's left table.
 
 I categorized the products by "Total Profit Ranking". I also sorted the "Average Profit Per Unit" column in ascending order to get a quick view of which products have the lowest "Average Profit Per Unit" and should be recommended for discontinuation.
 
