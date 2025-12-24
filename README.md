@@ -1,6 +1,6 @@
 <h2>Overview:</h2>
 
-In  E x c e l, I created a workbook to streamline supply chain management: 
+In  E x c e l, I created a workbook (file available upon request) to streamline supply chain management : 
 
 Sheet 1. ABCD Classification:
 
