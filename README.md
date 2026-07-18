@@ -62,7 +62,7 @@ I used the <code>PERCENTILE.EXC</code> function to determine the threshold amoun
 
 <h4>Left table:</h4>
 
-<img src="https://github.com/w7978708wen/Supply-Chain-Repository/blob/main/Screenshots/ABCD%20Classification%20sheet%20pt%204.png?raw=true"></img>
+<img src="https://github.com/w7978708wen/Supply-Chain-Repository/blob/main/Screenshots/ABCD%20Classification%20Sheet%20Left%20Table.png?raw=true"></img>
 
 <h4>"Total Profit" column:</h4>
 
