@@ -18,7 +18,7 @@ The XLOOKUP function is used here to efficiently match each SKU with its corresp
 <H2>Sheet 1. ABCD Classification:</H2>
 
 Here is a snippet of how the sheet looks:
-<img src="https://github.com/w7978708wen/Supply-Chain-Repository/blob/main/Screenshots/ABCD%20Classification%20sheet%20pt%201.png?raw=true"></img>
+<img src="https://github.com/w7978708wen/Supply-Chain-Repository/blob/main/Screenshots/ABCD%20Classification%20Sheet%20Preview.png?raw=true"></img>
 
 <h3>Objective:</h3>
 The objective is to evaluate the performance of each SKU/item based on how many units are sold and total profit. Based on these performance metrics, it is recommended whether or not to discontinue the item. 
@@ -37,7 +37,7 @@ I used several E x c e l functions to create additional calculated columns.
 
 <h4>"Min amount"(to meet the cut-off) column:</h4>
 
-<img src="https://github.com/w7978708wen/Supply-Chain-Case-Study-/blob/main/Screenshots/ABCD%20Classification%20sheet%20pt%202.png?raw=truee"></img>
+<img src="https://github.com/w7978708wen/Supply-Chain-Repository/blob/main/Screenshots/ABCD%20Classification%20Sheet%20Total%20Profit%20Ranking%20Table.png?raw=true" width="400"></img>
 
 Equation for the first entry: 
 <code>=PERCENTILE.EXC($D2:$D20, 1-K4)</code>
@@ -50,7 +50,7 @@ I used the <code>PERCENTILE.EXC</code> function to determine the threshold amoun
 
 <h4>"Min amount"(to meet the cut-off) column </h4>
 
-<img src="https://github.com/w7978708wen/Supply-Chain-Case-Study-/blob/main/Screenshots/ABCD%20Classification%20sheet%20pt%203.png?raw=true"></img>
+<img src="https://github.com/w7978708wen/Supply-Chain-Repository/blob/main/Screenshots/ABCD%20Classification%20Sheet%20Sales%20Ranking%20Table.png" width="400"></img>
 
 Equation for the first entry: 
 <code>=PERCENTILE.EXC($C2:$C20, 1-K11)</code>
