@@ -64,7 +64,7 @@ I used the <code>PERCENTILE.EXC</code> function to determine the threshold amoun
 
 
 
-<h4>Left table:</h4>
+<h4>Left inventory table:</h4>
 
 <img src="https://github.com/w7978708wen/Supply-Chain-Repository/blob/main/Screenshots/ABCD%20Classification%20Sheet%20Left%20Table.png?raw=true"></img>
 
@@ -114,7 +114,7 @@ If a cell under the "Discontinue" column contains the text "No", then make the c
 <hr style="height:5px;background-color:#1e1c1f;">
 <H2>Sheet 2.Pivot Table – SKU Profits</H2>
 
-I created a PivotTable using the columns in the "ABCD Classification" sheet's left table.
+I created a PivotTable using the columns in the "ABCD Classification" sheet's left inventory table.
 
 I categorized the products by "Total Profit Ranking". I also sorted the "Average Profit Per Unit" column in ascending order to get a quick view of which products have the lowest "Average Profit Per Unit" and should be recommended for discontinuation.
 
