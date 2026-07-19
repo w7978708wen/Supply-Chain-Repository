@@ -1,20 +1,24 @@
 <h2>Overview:</h2>
 
-In  E x c e l, I created a workbook (file typically available upon request) to streamline supply chain management : 
-
+In  E x c e l, I created a workbook (file typically available upon request) to streamline supply chain management. Here is a brief overview of each sheet before looking into each in greater depth. 
+<br></br>
 Sheet 1. ABCD Classification:
 
 Given the profit per unit and units sold for each SKU/item, the item is classified as "A", "B", "C", or "D" based on "Sales Ranking" and "Total Profit Ranking" metrices. 
 
 The SKU/item that are classified as "D" in both categories are recommended to be discontinued. 
 
+<br></br>
+Sheet 2: Pivot Table - SKU Profits:
 
-Sheet 2. Re-Order Point & VLOOKUP:
+I categorized the products by "Total Profit Ranking". I also sorted the "Average Profit Per Unit" column in ascending order to get a quick view of which products have the lowest "Average Profit Per Unit" and should be recommended for discontinuation.
 
-Given the beginning & current stock counts and the re-order point for each SKU/item, the current stock count is calculated which further determines whether determine it needs to be re-ordered.  
+<br></br>
+Sheet 3. Re-Order Point & VLOOKUP:
 
-The XLOOKUP function is used here to efficiently match each SKU with its corresponding current inventory count.
+This sheet determines whether each SKU/item needs to be re-ordered based on the current stock count. 
 
+<br></br>
 <H2>Sheet 1. ABCD Classification:</H2>
 
 Here is a snippet of how the sheet looks:
